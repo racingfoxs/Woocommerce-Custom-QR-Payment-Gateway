@@ -40,7 +40,8 @@ jQuery(document).ready(function($) {
                                 type: 'hidden',
                                 id: 'esewa_screenshot_url',
                                 name: 'esewa_screenshot_url',
-                                value: response.url
+                                value: response.url,
+                                 accept: ".jpg, .jpeg, .png"
                             }).appendTo('#uploaded_image');
                         } else {
                             console.error('Unknown response:', response);
